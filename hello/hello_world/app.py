@@ -37,7 +37,6 @@ def lambda_handler(event, context):
     print(event)
 
     # get variable "input" from event
-    # this does not work during local execution (because launch.json does not seem to support query strings)
     input_variable = event["queryStringParameters"]["input"]
 
     # validate input variable
